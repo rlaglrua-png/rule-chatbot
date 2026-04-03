@@ -18,7 +18,7 @@ def search_rules(q):
     results = [] 
 for r in rules: 
     if q in r["조문"] or q in r["본문"]: 
-    results.append(r) 
+        results.append(r) 
 return results 
  
 # 검색 실행 
