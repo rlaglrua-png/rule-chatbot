@@ -26,8 +26,8 @@ if query:
     results = search_rules(query) 
  
 if results: 
-for r in results: 
-    st.write("------") 
+    for r in results: 
+        st.write("------") 
 st.write(f"■ {r['조문']} ({r['제목']})") 
 st.write(r["본문"]) 
 else: 
