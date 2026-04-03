@@ -17,18 +17,18 @@ query = st.text_input("검색어 입력 (예: 제93조, 졸업, 휴학)")
 def search_rules(q): 
     results = [] 
 for r in rules: 
-if q in r["조문"] or q in r["본문"]: 
-results.append(r) 
+    if q in r["조문"] or q in r["본문"]: 
+    results.append(r) 
 return results 
  
 # 검색 실행 
 if query: 
-results = search_rules(query) 
+    results = search_rules(query) 
  
 if results: 
 for r in results: 
-st.write("------") 
+    st.write("------") 
 st.write(f"■ {r['조문']} ({r['제목']})") 
 st.write(r["본문"]) 
 else: 
-st.write("검색 결과 없음") 
+    st.write("검색 결과 없음") 
