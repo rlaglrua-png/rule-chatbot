@@ -8,7 +8,7 @@ st.write("조문 또는 키워드를 입력하세요")
  
 # rules.json 불러오기 
 with open("rules.json", encoding="utf-8") as f: 
-rules = json.load(f) 
+    rules = json.load(f) 
  
 # 검색 입력창 
 query = st.text_input("검색어 입력 (예: 제93조, 졸업, 휴학)") 
